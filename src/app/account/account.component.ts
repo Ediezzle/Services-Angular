@@ -14,7 +14,7 @@ export class AccountComponent {
   private logServ;
   private accServ;
 
-  //constructor injection nolonger necessary when using service injection, just left in here for reference sake
+  //LoggingService constructor injection nolonger necessary when using service injection, just left in here for reference sake
   constructor(aLogServ: LoggingService, accServ: AccountsService){
     this.logServ=aLogServ;
     this.accServ=accServ;

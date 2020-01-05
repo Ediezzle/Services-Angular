@@ -10,7 +10,7 @@ import { AccountsService } from '../account/accounts.service';
 })
 export class NewAccountComponent{
 
-  //constructor injection nolonger necessary when using service injection, just left in here for reference sake
+  //LoggingService constructor injection nolonger necessary when using service injection, just left in here for reference sake
   constructor(private logServ: LoggingService, private accServ: AccountsService){
     this.accServ.statusUpdated.subscribe((stats: string)=>alert('New status: ' + stats));
   }
